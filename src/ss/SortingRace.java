@@ -6,7 +6,7 @@ import java.util.Comparator;
 public class SortingRace {
     public static void main(String[] args) {
         // Example with BubbleSort integer
-        BubbleSort<Integer> integerBubbleSort = new BubbleSort<>(new Integer[]{3,1, 4, 1, 5, 9, 2, 6, 5, 3, 5}, Comparator.naturalOrder());
+        BubbleSort<Integer> integerBubbleSort = new BubbleSort<>(new Integer[]{3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5}, Comparator.naturalOrder());
         integerBubbleSort.sort();
         displayResults("BubbleSort (Integer)", integerBubbleSort);
 
@@ -21,7 +21,7 @@ public class SortingRace {
         displayResults("SelectionSort (Integer)", integerSelectionSort);
         
         // Example with SelectionSort String
-        SelectionSort<String> strSelectionSort = new SelectionSort<>(new String[]{"Chava", "Shana", "Malya", "Noami", "Tehila", "Faigy", "Aliza"}, Comparator.naturalOrder());
+        SelectionSort<String> strSelectionSort = new SelectionSort<>(new String[]{"Chava", "Shana", "Malya", "Noami", "Tehila", "Faigy", "Aliza"}, Comparator.reverseOrder());
         strSelectionSort.sort();
         displayResults("SelectionSort (String)", strSelectionSort);
     }

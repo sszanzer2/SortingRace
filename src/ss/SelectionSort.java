@@ -13,7 +13,7 @@ public class SelectionSort<T extends Comparable<T>> implements SortAlgorithm<T> 
     private int comparisonCount;
 
     public SelectionSort(T[] arrayToSort, Comparator<? super T> customComparator) {
-    	 if (arrayToSort == null) {
+    	 if (arrayToSort == null ) {
              throw new IllegalArgumentException("Array to sort cannot be null");
          }
         this.arrayToSort = arrayToSort;
@@ -22,6 +22,7 @@ public class SelectionSort<T extends Comparable<T>> implements SortAlgorithm<T> 
     }
     
     @Override
+    //Sorts the array via selection sort
     public void sort() {
         int n = arrayToSort.length;
         for (int i = 0; i < n - 1; i++) {

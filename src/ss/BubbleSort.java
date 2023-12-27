@@ -14,7 +14,7 @@ public class BubbleSort<T extends Comparable<T>> implements SortAlgorithm<T> {
 
     // Custom comparator
     public BubbleSort(T[] arrayToSort, Comparator<? super T> customComparator) {
-    	 if (arrayToSort == null) {
+    	 if (arrayToSort == null ) {
              throw new IllegalArgumentException("Array to sort cannot be null");
          }
         this.arrayToSort = arrayToSort;
